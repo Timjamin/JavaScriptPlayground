@@ -33,9 +33,9 @@ function getFormValues() {
 }
 
 function countTheStuff() {
-    document.getElementById("countOfP").innerHTML = document.documentElement.innerHTML.split("</p>").length
-    document.getElementById("countOfH2").innerHTML = document.documentElement.innerHTML.split("</h2>").length
-    document.getElementById("countOfTD").innerHTML = document.documentElement.innerHTML.split("</td>").length
+    document.getElementById("countOfP").innerHTML =  document.getElementsByTagName("p").length
+    document.getElementById("countOfH2").innerHTML = document.getElementsByTagName("h2").length
+    document.getElementById("countOfTD").innerHTML = document.getElementsByTagName("td").length
 }
 
 let rowCount = 3
